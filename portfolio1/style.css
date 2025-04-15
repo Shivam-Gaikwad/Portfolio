@@ -1,0 +1,120 @@
+:root {
+    --bg-color: #f4f4f6;
+    --text-color: #222;
+    --primary-color: #3e64ff;
+    --section-bg: #eaeaea;
+    --card-bg: #ffffff;
+  }
+
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  nav h1 {
+    font-size: 1.8rem;
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .hero {
+    margin-top: 20px;
+  }
+
+  section {
+    padding: 40px 20px;
+    background-color: var(--section-bg);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .project {
+    background: var(--card-bg);
+    padding: 20px;
+    margin: 10px auto;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+  }
+
+  #contact ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: auto;
+  }
+
+  #contact li {
+    margin: 10px 0;
+  }
+
+  #contact a {
+    color: var(--primary-color);
+    text-decoration: none;
+  }
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+  }
+  /* Base styles for fade-in effect */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.fade-in.in-view {
+    opacity: 1;
+}
+
+/* Scroll to top button styling */
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    display: none;
+    cursor: pointer;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
